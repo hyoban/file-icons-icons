@@ -38,6 +38,14 @@ webfont({
 				),
 				result.woff2
 			);
+			fs.writeFileSync(
+				path.resolve(
+					__dirname,
+					"../file-icons-atom/fonts",
+					`${result.config?.fontName}.woff2`
+				),
+				result.woff2
+			);
 		}
 	})
 	.catch((error) => {
